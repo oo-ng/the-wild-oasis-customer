@@ -1,17 +1,20 @@
+// "use client"
 export const metadata = {
- title: 'Cabins'
+  title: 'Cabins'
 };
 
-export const revalidate = 15
 
 import CabinCard from "@/app/_components/CabinCard";
 import { getCabins } from "../_lib/data-service";
 import CabinList from "../_components/CabinList";
 import { Suspense } from "react";
 import Spinner from "../_components/Spinner";
+import Filter from "../_components/FIlter";
+import ReservationReminder from "../_components/ReservationReminder";
 
-export default  function Page() {
+export default  function Page({searchParams}) {
  
+  const filter = searchParams?.maxCapacity??"all"
 
   return (
     <div>
@@ -26,10 +29,12 @@ export default  function Page() {
         away from home. The perfect spot for a peaceful, calm vacation. Welcome
         to paradise.
       </p>
-
-      
-        <Suspense fallback={<Spinner/>}>
-          <CabinList/>
+      <div className='flex justify-end mb-2'>
+        <Filter/> 
+      </div>
+        <Suspense key={filter} fallback={<Spinner/>}>
+          <CabinList filter={filter}/>
+          <ReservationReminder/>
         </Suspense>
       
     </div>
