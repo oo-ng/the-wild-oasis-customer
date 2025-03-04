@@ -10,7 +10,6 @@ export default async function CabinList ({filter}) {
         return null
     }
 
-console.log("TEzt",filter)
     let filteredCabins
     if(filter === 'all'){
         filteredCabins = cabins

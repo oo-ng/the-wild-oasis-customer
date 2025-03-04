@@ -1,6 +1,14 @@
-function SignInButton() {
+
+'use client';
+
+import { signIn } from 'next-auth/react';
+
+export default function SignInButton() {
   return (
-    <button className='flex items-center gap-6 text-lg border border-primary-300 px-10 py-4 font-medium'>
+    <button
+      onClick={() => signIn('google', { callbackUrl: '/' })}
+      className='flex items-center gap-6 text-lg border border-primary-300 px-10 py-4 font-medium'
+    >
       <img
         src='https://authjs.dev/img/providers/google.svg'
         alt='Google logo'
@@ -11,5 +19,3 @@ function SignInButton() {
     </button>
   );
 }
-
-export default SignInButton;
