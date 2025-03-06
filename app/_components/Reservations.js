@@ -7,7 +7,6 @@ import LoginMessage from "./LoginMessage";
 
 export default async function Reservations ({cabin}) {
     const session = await getServerSession()
-    console.log(session)
     
     const [settings, bookedDates] = await Promise.all([
         getSettings(),
