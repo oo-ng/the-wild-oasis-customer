@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🏕️ The Wild Oasis
 
-## Getting Started
+A full-stack **cabin management web application** designed to simplify the booking process, monitor sales performance, and manage users—all in one sleek, responsive dashboard.
 
-First, run the development server:
+Live Site: [https://the-wild-oasis-demo-bay.vercel.app/](https://the-wild-oasis-demo-bay.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **User Authentication & Authorization** (Protected Routes)
+- **Real-time Sales and Booking Stats** using dynamic charts (Recharts)
+- **Cabin CRUD Management**
+- **Booking Calendar** with filters for recent, upcoming, and checked-in/out guests
+- **User Role Management** (Admin & Regular Users)
+- **Dark Mode** toggle for improved accessibility
+- **Responsive UI** built with Styled Components and React Hook Form
+- **Optimistic UI updates** for faster interaction
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠️ Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+### Frontend
+- [React.js](https://reactjs.org/)
+- [React Router](https://reactrouter.com/)
+- [Styled Components](https://styled-components.com/)
+- [Recharts](https://recharts.org/)
+- [React Hook Form](https://react-hook-form.com/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Backend & Database
+- [Supabase](https://supabase.com/) (PostgreSQL DB + Auth + API)
+- Supabase Storage (for image uploads)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Hosting & Deployment
+- [Vercel](https://vercel.com/) (Frontend hosting)
+- Environment variables securely stored in Vercel
 
-## Deploy on Vercel
+---
+## 🧠 Lessons Learned
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Improved my full-stack workflow from UI to database.
+- Applied **secure auth patterns** and **role-based routing**.
+- Gained hands-on experience with **real-time data**, **file storage**, and **chart visualizations**.
+- Learned how to structure large-scale React projects cleanly and maintainably.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📫 Contact
+
+Built by [Onaopemipo Olagoke](mailto:oolagoke@umich.edu)  
+Let’s connect on [LinkedIn](https://www.linkedin.com/in/onaopemipo-olagoke/) or check out my other projects on [GitHub](https://github.com/your-username)!
